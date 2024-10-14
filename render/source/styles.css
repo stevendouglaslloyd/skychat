@@ -1,0 +1,360 @@
+#main {
+
+overflow: hidden; 
+
+}
+
+#response {
+width: 79%;
+height: 14%;
+position:absolute;
+right: 5.50%;
+border: 1px solid #414141;
+top:3.75%;
+padding:3%;
+z-index:35;
+text-align: center;
+font-size:10px;
+contain: paint;
+}
+.enter-box {
+
+width: 100%;
+height: 100%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+right: 0%;
+top:0%;
+z-index: 8;
+padding:10%;
+}
+
+.enter-box-container {
+
+width:10%;
+height: 10%;
+background:#0072ff;
+position:absolute;
+right: 28%;
+top:15%;
+z-index: 8;
+padding:10%;
+
+
+}
+
+#username {
+
+margin-top:2.5%;
+margin-left:1%;
+position:absolute;
+left: 34.50%;
+top:25%;
+
+}
+
+#password {
+
+
+position:absolute;
+left: 34.50%;
+top:30%;
+margin-top:2.5%;
+margin-left:1%;
+
+}
+
+#logo {
+
+width: 40%;
+height: 40%;
+position:absolute;
+left: 30%;
+top:4%;
+}
+
+
+#login-enter {
+width: 10.5%;
+height: 10%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+left: 38%;
+bottom:50%;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#create-enter {
+width: 10.5%;
+height: 10%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+right: 38%;
+bottom:50%;
+border-radius: 5px;
+
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+#login {
+cursor: pointer;
+width: 10.5%;
+height: 10%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+left: 38%;
+bottom:50%;
+border-radius: 5px;
+z-index:50;
+
+}
+
+#create {
+cursor: pointer;
+width: 10.5%;
+height: 10%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+left: 38%;
+bottom:50%;
+border-radius: 5px;
+z-index:50;
+}
+
+#back {
+cursor: pointer;
+width: 10.5%;
+height: 10%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+right: 38%;
+bottom:50%;
+border-radius: 5px;
+z-index:50;
+}
+.login-box {
+width: 100%;
+height: 100%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+right: 0%;
+top:0%;
+z-index: 8;
+padding:10%;
+
+
+
+}
+
+
+.login-box-container {
+width:10%;
+height: 10%;
+background:#0072ff;
+position:absolute;
+right: 28%;
+top:15%;
+z-index: 8;
+padding:10%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contacts-box {  
+width: 20%;
+height: 100%;
+border: 1px solid #414141;
+background:#1b1b1b;
+position:absolute;
+left: 0%;
+top:0%;
+overflow:auto; /* Allows scrolling if messages overflow */
+
+}
+
+
+
+
+.messages-box {  
+    width: 78.75%;
+    height:87%;
+    border: 1px solid #414141;
+    background: #000000;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    overflow:auto; /* Allows scrolling if messages overflow */
+    padding: 10px; /* Adds some padding inside the messages box */
+    
+}
+
+.message-entry-sender {
+    padding: 10px; /* Increased padding for better spacing */
+    width: fit-content; /* Adjust width based on content */
+    max-width: 65%; /* Maximum width limit */
+    border: 1px solid #0072ff; /* Slightly lighter border */
+    background: #0072ff;
+    position: relative;
+    align-self: flex-end; /* Align to the right */
+    margin: 10px 0; /* Spacing above and below */
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.message-entry-receiver {
+    padding: 10px; /* Increased padding for better spacing */
+    width: fit-content; /* Adjust width based on content */
+    max-width: 65%; /* Maximum width limit */
+    border: 1px solid #414141; /* Receiver border */
+    background: #414141;
+    position: relative;
+    align-self: flex-start; /* Align to the left */
+    margin: 10px 0; /* Spacing above and below */
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Flexbox for messages layout */
+.messages-box {
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    justify-content: flex-start; /* Align messages to the top */
+}
+
+
+
+
+
+.message-box {  
+width: 80%;
+height: 9.75%;
+border: 1px solid #414141;
+background:#1b1b1b;
+position:absolute;
+left: 20%;
+bottom:0%;
+
+}
+
+#send {  
+width: 4.5%;
+height: 40.75%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+right: 1%;
+top:30%;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.AddContactBox {
+
+width: 98.50%;
+height: 10%;
+border: 1px solid #414141;
+background:#414141;
+position:relative;
+left: 0.5%;
+bottom:0.25%;
+
+}
+
+#InputPublicKey {
+width: 65.5%;
+margin-top:2.5%;
+margin-left:1%;
+position:absolute;
+left: 8%;
+bottom:12%;
+
+
+
+
+}
+
+#InputUserName {
+width: 65.5%;
+margin-top:2.5%;
+margin-left:1%;
+position:absolute;
+left: 8%;
+bottom:51%;
+
+
+
+
+}
+
+#Add {
+width: 15.5%;
+height: 40.75%;
+background:#0072ff;
+border: 1px solid #414141;
+position:absolute;
+right: 4%;
+bottom:25%;
+border-radius: 5px;
+cursor: pointer;
+
+}
+#contact-entry {
+
+width: 98.50%;
+height: 10%;
+border: 1px solid #414141;
+background:red;
+position:absolute;
+left: 0.5%;
+bottom:0.25%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#input {
+
+width: 92.25%;
+margin-top:2%;
+margin-left:1%;
+
+}

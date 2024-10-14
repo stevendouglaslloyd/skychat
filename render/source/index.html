@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>skychat</title>
+    <link rel="icon" type="image/png" href="/source/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/source/styles.css">
+</head>
+<body id="main">
+    <div class="enter-box">
+        <div class="enter-box-container">
+            <img id="logo" src="/source/skychat.png" alt="skychat">
+            <div id="content-box" class="content-box">
+				
+                <button type="button" id="login-enter" onclick="Login()">Login</button>
+                <button type="button" id="create-enter" onclick="Create()">Create</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="messages-box" class="messages-box">
+
+
+    </div>
+    <script src="/source/script.js"></script>
+    <div class="message-box">
+        <input type="text" id="input" placeholder="Message" />
+        <button type="button" id="send">Send</button>
+    <script>
+    
+    
+    
+    SendButton();
+    
+    </script>
+    </div>
+
+    <div id="contacts-box" class="contacts-box">
+		<div class="AddContactBox">
+		<input type="text" id="InputPublicKey" placeholder="Add PubKey" />
+		<input type="text" id="InputUserName" placeholder="Add UserName" />
+        <button type="button" id="Add">Add</button>
+     <script>
+    
+    
+    
+    AddButton();
+    
+    </script>
+		</div>
+       
+    </div>
+
+
+    <script>
+        function Login() {
+            document.getElementById("content-box").innerHTML = 
+                '<input type="text" id="username" placeholder="username" />' +
+                '<input type="text" id="password" placeholder="password" />' +
+                '<div id="response"></div>' +
+                '<button type="button" id="login">Login</button>' +
+                '<button type="button" id="back" onclick="GoBack()">Back</button>';
+            
+            LoginButton(); // Call to set up the login button
+            	const logo = document.querySelector('#logo');
+				if (logo) {
+					logo.remove(); // This will remove the entire section
+				}
+        }
+
+        function Create() {
+            document.getElementById("content-box").innerHTML = 
+                '<input type="text" id="username" placeholder="username" />' +
+                '<input type="text" id="password" placeholder="password" />' +
+                '<div id="response"></div>' +
+                '<button type="button" id="create">Create</button>' +
+                '<button type="button" id="back" onclick="GoBack()">Back</button>';
+            CreateButton(); // Call to set up the login button
+				const logo = document.querySelector('#logo');
+				if (logo) {
+					logo.remove(); // This will remove the entire section
+				}
+        }
+
+        function GoBack() {
+            document.getElementById("content-box").innerHTML = 
+                '<button type="button" id="login-enter" onclick="Login()">Login</button>' +
+                '<button type="button" id="create-enter" onclick="Create()">Create</button>'+
+                '<img id="logo" src="/source/skychat.png" alt="skychat">';
+        }
+    </script>
+</body>
+</html>
